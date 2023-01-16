@@ -42,7 +42,14 @@ function onGalleryContainerClick (evt){
 		}
 	});
   
+  listGallery.addEventListener('keydown', evt => {
+		if (evt.key === 'Escape') {
+			listGallery.removeEventListener('keydown', evt )
+		}
+	});
+  
 };
- 
+
+
 
 console.log(galleryItems);
