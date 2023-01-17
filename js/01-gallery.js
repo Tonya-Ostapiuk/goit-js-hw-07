@@ -39,14 +39,16 @@ function onGalleryContainerClick (evt){
   listGallery.addEventListener('keydown', evt => {
 		if (evt.key === 'Escape') {
 			instance.close()
+       listGallery.removeEventListener('keydown', evt )
 		}
+   
 	});
   
-  listGallery.addEventListener('keydown', evt => {
-		if (evt.key === 'Escape') {
-			listGallery.removeEventListener('keydown', evt )
-		}
-	});
+  // listGallery.addEventListener('keydown', evt => {
+	// 	if (evt.key === 'Escape') {
+	// 		listGallery.removeEventListener('keydown', evt )
+	// 	}
+	// });
   
 };
 
